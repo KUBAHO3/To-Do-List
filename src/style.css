@@ -8,8 +8,8 @@
 .todos {
   display: flex;
   padding-top: 20px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
   justify-content: space-between;
   padding-bottom: 20px;
   padding-left: 20px;
@@ -24,14 +24,14 @@
 
 .foot-container {
   text-align: center;
-  margin-top: 0px;
+  margin-top: 0;
   margin-bottom: 10px;
   border: 1px solid rgb(76, 75, 75);
   background-color: rgb(219, 219, 219);
 }
 
 #text-field {
-  border: 0px solid white;
+  border: 0 solid white;
   font-size: large;
   font-style: italic;
   width: 90%;
