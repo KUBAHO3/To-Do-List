@@ -44,3 +44,7 @@
 .task {
   font-size: large;
 }
+
+.todos > i {
+  cursor: move;
+}
