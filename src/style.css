@@ -5,9 +5,11 @@
 
 .head-container,
 .neck-container,
-.body-container {
+.todos {
   display: flex;
   padding-top: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
   justify-content: space-between;
   padding-bottom: 20px;
   padding-left: 20px;
