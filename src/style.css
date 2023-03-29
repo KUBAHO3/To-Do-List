@@ -1,3 +1,14 @@
-.hello {
-    color: red;
-  }
+.main-section {
+  margin: 10%;
+  box-shadow: 10px 10px 5px rgb(69, 69, 69);
+}
+
+.head-container,
+.neck-container,
+.body-container {
+  display: flex;
+  padding-top: 20px;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  border: 1px solid rgb(76, 75, 75);
+}
