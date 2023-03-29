@@ -10,5 +10,35 @@
   padding-top: 20px;
   justify-content: space-between;
   padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
   border: 1px solid rgb(76, 75, 75);
+}
+
+.title {
+  font-weight: 600;
+  font-size: large;
+}
+
+.foot-container {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  border: 1px solid rgb(76, 75, 75);
+  background-color: rgb(219, 219, 219);
+}
+
+#text-field {
+  border: 0px solid white;
+  font-size: large;
+  font-style: italic;
+  width: 90%;
+}
+
+#text-field:focus {
+  outline: none;
+}
+
+.task {
+  font-size: large;
 }
