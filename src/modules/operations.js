@@ -51,4 +51,16 @@ export  class Operations {
     }
   }
 
+  static getAllTasks() {
+    if (localStorage.getItem('data')) {
+      return JSON.parse(localStorage.getItem('data'));
+    }
+    return [];
+  }
+
+  static updateTask =(newDatas)=> {
+    localStorage.clear();
+    localStorage.setItem('data', JSON.stringify(newDatas));
+  }
+
 }
