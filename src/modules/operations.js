@@ -32,7 +32,7 @@ export  class Operations {
       const newData = this.getAllTasks();
       newData.splice(index, 1);
       for (let i = index; i < this.getAllTasks().length - 1; i += 1) {
-        newData[i].index = String(i, 10);
+        newData[i].index = i+1;
       }
       this.updateTask(newData);
       this.showTask();

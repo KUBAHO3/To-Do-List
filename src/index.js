@@ -45,7 +45,7 @@ taskContainer.addEventListener('click', (e) => {
       description.style.display='none';
       editInput.style.display='block';
       if (editButtonStats !== false) {
-        data[index].description=editInput.value;
+        data[index-1].description=editInput.value;
         description.style.display='block';
         editInput.style.display='none';
         Operations.updateTask(data);
@@ -67,7 +67,7 @@ taskContainer.addEventListener('click', (e) => {
        const data = Operations.getAllTasks();
        const index = parseInt(ids, 10);
        if (data !== []) {
-         Operations.removeTask(index);
+         Operations.removeTask(index-1);
        }
      }
    }
@@ -76,7 +76,7 @@ taskContainer.addEventListener('click', (e) => {
  clearAllDone.addEventListener('click',(e)=>{
   const data= Operations.getAllTasks();
   const storage=data.filter((todo)=>todo.completed===false);
-  for(let i=0; i<storage.length; i=+1) {
+  for(let i=1; i<storage.length; i=+1) {
     storage[i].index=i+1;
   }
   Operations.updateTask(storage);
