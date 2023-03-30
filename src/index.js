@@ -57,4 +57,19 @@ taskContainer.addEventListener('click', (e) => {
     }
   }
 });
+
+ //! REMOVING
+ Operations.showTask();
+ taskContainer.addEventListener('click', (e) => {
+   if (e.target !== null && e.target !== 'NaN' && e.target !== '') {
+     if (e.target.className === 'deleteButton') {
+       const ids = e.target.id.replace('delete-', '');
+       const data = Operations.getAllTasks();
+       const index = parseInt(ids, 10);
+       if (data !== []) {
+         Operations.removeTask(index);
+       }
+     }
+   }
+ });
 };
