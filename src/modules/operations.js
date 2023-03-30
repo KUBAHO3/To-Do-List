@@ -39,4 +39,16 @@ export  class Operations {
     }
   }
 
+  
+  static saveTask(todo) {
+    if (this.getAllTasks().length !== 0) {
+      localStorage.setItem(
+        'data',
+        JSON.stringify(this.getAllTasks().concat(todo)),
+      );
+    } else {
+      localStorage.setItem('data', JSON.stringify(todo));
+    }
+  }
+
 }
