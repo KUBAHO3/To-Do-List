@@ -25,5 +25,18 @@ export  class Operations {
       div.innerHTML += `<li><input class="checkbox-class" type="checkbox" id="checkbox-${task.index}" ${checked} /> <h3  id="d${task.index}" ${style} ${styleDescription} >${task.description}</h3><input class="edit-class" type="text" value="${task.description}" id="edit-${task.index}" ${styleText}/><button type="button" id="editBttn-${task.index}" class="editButton"></button><button type="button" class="deleteButton" id="delete-${task.index}"></button></li>`;
     });
   }
+
   
+  static removeTask(index) {
+    if (index > -1) {
+      const newData = this.getAllTasks();
+      newData.splice(index, 1);
+      for (let i = index; i < this.getAllTasks().length - 1; i += 1) {
+        newData[i].index = String(i, 10);
+      }
+      this.updateTask(newData);
+      this.showTask();
+    }
+  }
+
 }
