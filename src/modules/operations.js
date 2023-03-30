@@ -3,8 +3,8 @@ export  class Operations {
   static createTask() {
     const inputData = document.getElementById('inputText').value;
     const saveData = document.getElementById('formText');
-    const storage = this.getAllTasks().length;
-    const task = [{ description: inputData, completed: false, index: storage }];
+    const storage = this.getAllTasks().length+1;
+    const task = [{ description: inputData, completed: false, index: parseInt(storage) }];
     this.saveTask(task);
     this.showTask();
     saveData.reset();
