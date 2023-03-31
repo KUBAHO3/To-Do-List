@@ -4,7 +4,7 @@ import './style.css';
 import { Operations } from './modules/operations.js';
 const taskContainer = document.getElementById('task-container');
 const submitButton = document.getElementById('addButton');
-// const clearAllDone = document.getElementById('clearComplete');
+const clearAllDone = document.getElementById('clearComplete');
 let editButtonStats=false;
 window.onload = function windowReady() {
   Operations.showTask();
@@ -53,6 +53,8 @@ taskContainer.addEventListener('click', (e) => {
      }
    }
  });
+
+
 
 
 };
