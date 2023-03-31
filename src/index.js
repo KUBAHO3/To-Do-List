@@ -73,7 +73,13 @@ taskContainer.addEventListener('click', (e) => {
    }
  });
 
-
+ clearAllDone.addEventListener('click',(e)=>{
+  const data= Operations.getAllTasks();
+  const storage=data.filter((todo)=>todo.completed===false);
+  console.log(storage)
+  Operations.updateTask(storage);
+  Operations.showTask();
+ })
 
 
 };
