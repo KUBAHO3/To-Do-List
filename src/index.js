@@ -76,7 +76,9 @@ taskContainer.addEventListener('click', (e) => {
  clearAllDone.addEventListener('click',(e)=>{
   const data= Operations.getAllTasks();
   const storage=data.filter((todo)=>todo.completed===false);
-  console.log(storage)
+  for (let i = 0; i < storage.length; i++) {
+    storage[i].index = i + 1;
+  }
   Operations.updateTask(storage);
   Operations.showTask();
  })
