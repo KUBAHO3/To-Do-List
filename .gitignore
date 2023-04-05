@@ -1,7 +1,2 @@
 # .gitignore
 node_modules/
-
-src/modules/createTask.js
-src/modules/removeTask.js
-src/modules/showTask.js
-src/modules/saveTask.js
