@@ -62,5 +62,4 @@ export  class Operations {
     localStorage.clear();
     localStorage.setItem('data', JSON.stringify(newDatas));
   }
-
 }
